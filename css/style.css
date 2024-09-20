@@ -402,6 +402,8 @@ nav .fa-solid{
     }
     .header-text{
         color: #fff;
+        padding-top: 800px;
+        padding-left: 200px;
     }
     .copyright{
         font-size: 14px;
