@@ -336,8 +336,8 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 1170px) and (min-height: 2532px),
-       only screen and (max-width: 1080px) and (min-height: 2340px) {
+@media only screen and (max-width: 2532px) and (min-height: 1170px),
+       only screen and (max-width: 2340px) and (min-height: 1080px) {
      #header{
         background-image: url(../images/wallpaper1.png);
     }
