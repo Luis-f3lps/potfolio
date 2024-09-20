@@ -424,6 +424,12 @@ nav .fa-solid{
         grid-gap: 40px;
         margin-top: 40px;
     }
+    .work-list-certificados {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 40px;
+        margin-top: 40px;
+    }
 }
 
 /* --------------ódigo CSS para telas com largura maior ou igual a 1080p--------------- */
@@ -458,5 +464,11 @@ nav .fa-solid{
     }
     p{
         font-size: 16px;
+    }
+    .work-list-certificados {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 40px;
+        margin-top: 40px;
     }
 }
