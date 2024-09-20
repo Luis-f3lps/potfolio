@@ -430,6 +430,10 @@ nav .fa-solid{
         grid-gap: 40px;
         margin-top: 40px;
     }
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 }
 
 /* --------------ódigo CSS para telas com largura maior ou igual a 1080p--------------- */
@@ -470,5 +474,9 @@ nav .fa-solid{
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         grid-gap: 40px;
         margin-top: 40px;
+    }
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
