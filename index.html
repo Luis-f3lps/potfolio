@@ -347,14 +347,6 @@
                 </div>
                 <a href="pdf/Cúrriculo_Luis_Gustavo_B_Santiago.pdf" download class="btn btn2"><i class="fa-solid fa-file-pdf"></i> Cúrriculo</a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Seu nome:" required>
-                    <input type="email" name="Email" placeholder="Seu email:" required>
-                    <textarea name="Message" row="6" placeholder="Mensagem"></textarea>
-                    <button type="submit" class="btn btn2">Enviar</button>
-                </form>
-            </div>
         </div>
     </div>
     <div class="copyright">
@@ -394,19 +386,6 @@
         sidemenu.style.right = "-200px";
     }
 </script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJ-y9bAog5Qsv0CT94kKJED2uXWb3Uv_B6fPRUeCyDPXXJ7lhNMUvBq3dEoqmJo-Pp/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
 
 </body>
 </html>
