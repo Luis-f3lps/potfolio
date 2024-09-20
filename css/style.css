@@ -336,8 +336,9 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
-    #header{
+@media only screen and (max-width: 1170px) and (min-height: 2532px),
+       only screen and (max-width: 1080px) and (min-height: 2340px) {
+     #header{
         background-image: url(../images/wallpaper1.png);
     }
     .header-text{
@@ -405,8 +406,18 @@ nav .fa-solid{
         font-size: 14px;
         color: #ffffff;
     }
-    .services-list div a{
+    .services-list div a {
+        text-decoration: none;
         color: #ffffff;
+        font-size: 102px;
+        margin-top: 3px;
+        display: grid;
+    }
+    a{
+        font-size: 62px;
+    }
+    p{
+        font-size: 32px;
     }
 }
 
@@ -414,7 +425,6 @@ nav .fa-solid{
 @media only screen and (min-width: 1080px) {
     .services-list{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-gap: 40px;
         margin-top: 40px;
     }
@@ -433,4 +443,15 @@ nav .fa-solid{
     #contact{
         padding-top: 45px;
     }
-  }
+    .about-col-2 {
+        flex-basis: 60%;
+        text-align: start;
+        font-size: 13px;
+    }
+    a{
+        font-size: 62px;
+    }
+    p{
+        font-size: 32px;
+    }
+}
