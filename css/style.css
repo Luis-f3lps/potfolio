@@ -419,6 +419,11 @@ nav .fa-solid{
     p{
         font-size: 32px;
     }
+    .services-list {
+        display: grid;
+        grid-gap: 40px;
+        margin-top: 40px;
+    }
 }
 
 /* --------------ódigo CSS para telas com largura maior ou igual a 1080p--------------- */
@@ -449,7 +454,7 @@ nav .fa-solid{
         font-size: 13px;
     }
     a{
-        font-size: 62px;
+        font-size: 22px;
     }
     p{
         font-size: 32px;
