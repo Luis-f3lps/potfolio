@@ -324,14 +324,7 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    font-weight: 300;
-    margin-top: 20px;
-    color: #ffffff;
-}
+
 /* --------------Css para telefone--------------- */
 nav .fa-solid{
     display: none;
@@ -398,7 +391,7 @@ nav .fa-solid{
         font-size: 14px;
     }
     .tab-links{
-        font-size: 16px;
+        font-size: 30px;
         margin-right: 20px;
     }
     .contact-left, .contact-right{
@@ -424,7 +417,7 @@ nav .fa-solid{
         font-size: 62px;
     }
     p{
-        font-size: 32px;
+        font-size: 22px;
     }
     .services-list {
         display: flow;
@@ -448,6 +441,9 @@ nav .fa-solid{
         font-weight: 300px;
         border-radius: 10px; 
         transition: background 0.5s,transform 0.5s;
+    }
+    .services-list div p{
+        font-size: 16px;
     }
     .work {
         border-radius: 10px;
