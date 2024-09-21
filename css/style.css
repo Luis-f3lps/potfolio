@@ -451,6 +451,14 @@ nav .fa-solid{
         overflow: hidden;
         margin: 20px;
     }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 65px;
+        margin-right: 15px;
+        color: #ababab;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
 }
 
 /* --------------ódigo CSS para telas com largura maior ou igual a 1080p--------------- */
