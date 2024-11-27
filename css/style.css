@@ -336,10 +336,16 @@ nav .fa-solid{
 @media only screen and (max-width: 2532px) and (min-height: 1170px),
        only screen and (max-width: 2340px) and (min-height: 1080px) {
      #header{
-        background-image: url(../images/wallpaper1.png);
+    /* background-image: url(../images/wallpaper1.png); */
     }
     .header-text{
-        margin-top: 60%;
+    }
+    #header {
+    width: 100%;
+    height: 30vh;
+    /* background-image: url(../images/a7.png); */
+    background-size: cover;
+    background-position: center;
     }
     .header-text h1{
         font-size: 30px;
@@ -351,6 +357,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 60px;
+        color: white;
     }
     nav ul{
         background: #ff004f;
@@ -402,8 +409,6 @@ nav .fa-solid{
     }
     .header-text{
         color: #fff;
-        padding-top: 800px;
-        padding-left: 200px;
     }
     .copyright{
         font-size: 14px;
@@ -444,6 +449,7 @@ nav .fa-solid{
         font-weight: 300px;
         border-radius: 10px; 
         transition: background 0.5s,transform 0.5s;
+        width: 90%;
     }
     .services-list div p{
         font-size: 16px;
