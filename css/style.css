@@ -493,6 +493,9 @@ nav .fa-solid{
     a{
         font-size: 22px;
     }
+.services-list div p{
+color: black;
+    }
     p{
         font-size: 16px;
             color: #ffffff;
