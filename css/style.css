@@ -9,7 +9,7 @@ html{
 }
 body{
     background: #080808;
-    color: black;
+    color: white;
 }
 /* --------------Home------------------*/
 #header{
@@ -37,7 +37,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #ffffff;
+    color: #white;
     text-decoration: none;
     font-size: 22px;
     position: relative;
@@ -46,7 +46,8 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #cc4b01;
+    background: #blue;
+    color: blue;
     position: absolute;
     left: 0;
     bottom: -6px;
