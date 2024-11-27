@@ -37,7 +37,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #white;
+    color: white;
     text-decoration: none;
     font-size: 22px;
     position: relative;
@@ -46,7 +46,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #blue;
+    background: blue;
     color: blue;
     position: absolute;
     left: 0;
@@ -161,6 +161,7 @@ nav ul li a:hover::after{
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: black;
 }
 .services-list div p{
     text-align: justify;
