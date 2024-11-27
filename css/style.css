@@ -164,6 +164,7 @@ nav ul li a:hover::after{
 }
 .services-list div p{
     text-align: justify;
+    color: black;
 }
 .services-list div a{
     text-decoration: none;
@@ -492,9 +493,6 @@ nav .fa-solid{
     }
     a{
         font-size: 22px;
-    }
-.services-list div p{
-color: black;
     }
     p{
         font-size: 16px;
