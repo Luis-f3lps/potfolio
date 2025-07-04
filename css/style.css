@@ -273,7 +273,9 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 /* --------------Contato--------------- */
-
+.fa-solid, .fas {
+    color: rgb(209, 58, 12);
+}
 .contact-left{
     flex-basis: 35%;
 }
