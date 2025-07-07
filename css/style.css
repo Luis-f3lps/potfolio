@@ -149,6 +149,7 @@ nav ul li a:hover::after{
     font-weight: 300px;
     border-radius: 10px; 
     transition: background 0.5s,transform 0.5s;
+    HEIGHT: 100%;
 }
 .services-list div i{
     font-size: 50px;
