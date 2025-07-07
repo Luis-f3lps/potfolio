@@ -21,7 +21,7 @@ body{
     padding: 10px 10%;
 }
 .logo{
-    width: 0px;
+    width: 40px;
 }nav{
     display: flex;
     align-items: center;
