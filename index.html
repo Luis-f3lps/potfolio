@@ -242,13 +242,12 @@
         </div>
     </div>
 </div>
-  <button
-    type="button"
-    onclick="window.open('https://www.bing.com/search?q=' + encodeURIComponent('calendários'), '_blank')">
-    Pesquisar “calendários” no Bing
-  </button>
+
 <!----------------- Contato ------------>
 <div id="contact">
+      <button type="button" onclick="pesquisarSequencial()">
+    Pesquisar
+  </button>
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -299,7 +298,18 @@
         sidemenu.style.right = "-800px";
     }
 </script>
+<script>
+    function pesquisarSequencial() {
+      // abre primeira busca em nova guia
+      window.open("https://www.bing.com/search?q=calendários", "_blank");
 
+      // após 5 segundos, abre a segunda em outra guia
+      setTimeout(function() {
+        window.open("https://www.bing.com/search?q=hor", "_blank");
+      }, 5000);
+    }
+  </script>
 </body>
 </html>
+
 
