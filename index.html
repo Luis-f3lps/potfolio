@@ -298,56 +298,54 @@
         sidemenu.style.right = "-800px";
     }
 </script>
- <script>
-    // lista de pesquisas de futebol
-    const pesquisas = [
-      "champions%20leagueHDD1&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20leagueHDD2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20leagueHDD3&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20leagueHDD4&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",      
-        "champions%20leagueH5DD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20league7HDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",      
-        "champions%20leagu9eHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20league7H7DD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",      
-        "champions%20leag5ueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-              "champions%20lea4gueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20lea6gueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20l4eag7ueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20leag4ueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",      
-        "champions%20l5eagueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20leag6ueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",      
-        "champions%20lea5gueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20lea4gueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",      
-        "champions%20lea5gueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE",
-      "champions%20lea5gueHDD&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=champions%20leagueh&sc=12-17&sk=&cvid=A909DF0444A34B6DB7D1EFD5BD63EDFE"
-    ];
-
-    function iniciarComAbas() {
-      // abre uma aba nova
+   <script>
+    function iniciarBuscas() {
+      // Abre uma nova aba (vazia) — mantida sob controle
       const aba = window.open("", "_blank");
 
-      let i = 0;
+      // Primeira busca imediata
+      aba.location.href = "https://www.bing.com/search?q=1S&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
 
-      function trocar() {
-        if (i >= pesquisas.length) i = 0;
-        const termo = pesquisas[i];
-        i++;
-
-        // tempo aleatório entre 16s e 22s
-        const tempo = Math.floor(Math.random() * (22000 - 8000 + 1)) + 5000;
-
-        // muda a pesquisa na aba
-        aba.location.href = "https://www.bing.com/search?q=" + encodeURIComponent(termo);
-
-        // agenda a próxima troca
-        setTimeout(trocar, tempo);
-      }
-
-      trocar(); // inicia imediatamente
+      // Após 3 segundos (3000 ms), faz a segunda busca
+      setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1SS2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1SS2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1AA2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1WW2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1RR2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=Q12&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1QQE2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1QEF2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1QEZX2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1QDSZF2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+              setTimeout(() => {
+        aba.location.href = "https://www.bing.com/search?q=1DAD2&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=1&sc=12-1&sk=&cvid=426ED8D15B664C149C06781FC4A456C0";
+      }, 3000);
+        
     }
   </script>
 </body>
 </html>
+
 
 
 
