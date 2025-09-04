@@ -245,7 +245,7 @@
 
 <!----------------- Contato ------------>
 <div id="contact">
-      <button type="button" onclick="pesquisarSequencial()">
+  <button onclick="iniciarComAbas()">Iniciar pesquisas</button>
     Pesquisar
   </button>
     <div class="container">
@@ -304,74 +304,42 @@
       "futebol hoje",
       "campeonato brasileiro",
       "resultados futebol",
-      " gols da semana",
-        " brasileiro",
-      "resultatebol",
-      "melhools da semana",
-      "jogadomosos de futebol",
+      "gols da semana",
       "times europeus",
-    "jogadores famosos de futebol",
-      " europeus",
-      "champileague",
-      "ABC league",
-              "jogadores de futebol",
-      "times",
-      "champions ",
-              "melhools da semana",
-      "jogadomYosos de futebol",
-      "times europeus",
-    "jogadores famosos de futebol",
-      " euroHpeus",
-      "champileague",
-      "ABC leHague",
-      "hisKtória "
+      "jogadores famosos de futebol",
+      "champions league",
+      "melhores jogadores da história",
+      "abc league",
+      "história do futebol"
     ];
 
-    let indice = 0;
-
-    function iniciarPesquisas() {
-      executarPesquisa();
-    }
-
-    function executarPesquisa() {
-      if (indice >= pesquisas.length) {
-        indice = 0; // volta ao início (loop infinito)
-      }
-
-      const termo = pesquisas[indice];
-      indice++;
-
-      // faz a pesquisa na mesma aba
-      window.location.href = "https://www.bing.com/search?q=" + encodeURIComponent(termo);
-
-      // aqui a página sai, então o setTimeout não roda mais
-      // para manter tudo funcionando, o ideal é rodar numa aba separada com window.open
-    }
-
     function iniciarComAbas() {
-      // abre a primeira aba
+      // abre uma aba nova
       const aba = window.open("", "_blank");
 
       let i = 0;
+
       function trocar() {
         if (i >= pesquisas.length) i = 0;
         const termo = pesquisas[i];
         i++;
 
-        // gera tempo aleatório entre 16s e 22s
+        // tempo aleatório entre 16s e 22s
         const tempo = Math.floor(Math.random() * (22000 - 16000 + 1)) + 16000;
 
-        // muda a localização da aba
+        // muda a pesquisa na aba
         aba.location.href = "https://www.bing.com/search?q=" + encodeURIComponent(termo);
 
+        // agenda a próxima troca
         setTimeout(trocar, tempo);
       }
 
-      trocar();
+      trocar(); // inicia imediatamente
     }
   </script>
 </body>
 </html>
+
 
 
 
